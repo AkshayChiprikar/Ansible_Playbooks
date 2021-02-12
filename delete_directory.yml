@@ -1,0 +1,11 @@
+---
+- name: This playbook delete directory
+  hosts: all
+  become: true
+
+  tasks: 
+  - name: deleting a dirctory
+    file: 
+      path: /home/ansible/dira
+      state: absent
+

@@ -1,0 +1,11 @@
+---
+- name: This playbook creates directory
+  hosts: all
+  become: true
+
+  tasks: 
+  - name: Creating a dirctory
+    file: 
+      path: /home/ansible/dira
+      state: directory
+
